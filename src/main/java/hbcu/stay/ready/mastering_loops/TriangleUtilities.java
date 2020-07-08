@@ -1,20 +1,58 @@
 package hbcu.stay.ready.mastering_loops;
 
+
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        return null;
+
+       int count = numberOfRows;
+       String newerString = "";
+        StringBuilder r = new StringBuilder();
+        for (int i = 1; i < count; i++) {
+            r.append("*");
+            String newString = r.toString();
+            newerString += newString + "\n";
+        }
+       return newerString;
+
     }
 
+
+
+
+
+
+
     public static String getRow(int numberOfStars) {
-        return null;
+        String aRow = "";
+        for (int i = 0; i < numberOfStars; i++) {
+            String formRow = "*";
+            aRow = aRow + formRow;
+        }
+        return aRow;
     }
 
     public static String getSmallTriangle() {
-        return null;
+
+        String newerString = "";
+        StringBuilder r = new StringBuilder();
+        for (int i = 1; i < 5; i++) {
+            r.append("*");
+            String newString = r.toString();
+            newerString += newString + "\n";
+        }
+        return newerString;
     }
 
     public static String getLargeTriangle() {
-        return null;
+
+        String newerString = "";
+        StringBuilder r = new StringBuilder();
+        for (int i = 1; i <10; i++) {
+            r.append("*");
+            String newString = r.toString();
+            newerString += newString + "\n";
+        }
+        return newerString;
     }
 }
